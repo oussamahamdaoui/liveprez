@@ -1,0 +1,15 @@
+@import "../../colors.scss";
+
+.menu-button {
+  border: none;
+  height: 40px;
+  outline: none;
+  background-color: $light-grey;
+  font-size: 15px;
+  position: relative;
+
+  &--selected{
+    color: $blue;
+  }
+
+}

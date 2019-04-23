@@ -1,0 +1,65 @@
+@import '../../colors.scss';
+
+.rect{
+  position: absolute;
+  width: 200px;
+  height:200px;
+  outline: none;
+  &:focus{
+    border: 1px solid $blue;
+
+    .rect__handle {
+      background-color: $white;
+      border: 1px solid $blue;
+      width: 10px !important;
+      height: 10px !important;
+      &:nth-of-type(5){
+        transform: translate(-5px,5px)
+      }
+      &:nth-of-type(6){
+        transform: translate(-5px,-5px)
+      }
+      &:nth-of-type(7){
+        transform: translate(5px,-5px)
+      }
+      &:nth-of-type(8){
+        transform: translate(5px,5px)
+      }
+  
+    }
+  
+    .rect__handle--middle{
+      width: 10px !important;
+      height: 10px !important;
+      border: 1px solid $blue;
+      background-color: $white;
+      &:nth-of-type(1){
+        left:calc(50% - 5px) !important;
+      }
+
+      &:nth-of-type(2){
+        top:calc(50% - 5px) !important;
+      }
+
+      &:nth-of-type(3){
+        left:calc(50% - 5px) !important;
+      }
+
+      &:nth-of-type(4){
+        top:calc(50% - 5px) !important;
+      }
+  
+    }
+  }
+  
+  .rect__container{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-color: $grey;
+  }
+
+ 
+
+  
+}

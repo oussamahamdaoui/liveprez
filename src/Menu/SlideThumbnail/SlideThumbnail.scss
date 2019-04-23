@@ -1,0 +1,21 @@
+@import "../../colors.scss";
+
+.slide-thumbnail{
+  border: 1px solid $grey;
+  height: 150px;
+  margin-bottom: 6px;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-radius: 3px;
+  position: relative;
+
+  &--selected{
+    border: 1px solid $blue;
+  }
+
+  .slide-thumbnail__pagination{
+    position: absolute;
+    bottom: 5px;
+    right:5px;
+  }
+}

@@ -1,0 +1,37 @@
+
+@import '../../colors.scss';
+
+.groupped-buttons{
+  display: flex;
+  width:200px;
+  
+  .groupped-buttons__buton:last-child{
+    border-radius: 0px 4px 4px 0px;
+  }
+  .groupped-buttons__buton:first-child{
+    border-radius: 4px 0px 0px 4px;
+    border-left: 1px solid $grey;
+  }
+
+  
+  .groupped-buttons__buton{
+    padding: 2px;
+    background-color: $light-grey;
+    flex: 1;
+    border-right: 1px solid $grey;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+
+    text-align: center;
+  }
+
+  .groupped-buttons__buton--selected{
+    background-color: $blue;
+    border-top: 1px solid $blue;
+    border-bottom: 1px solid $blue;
+    color: $white;
+  }
+
+  
+
+}

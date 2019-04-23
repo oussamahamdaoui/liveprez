@@ -1,0 +1,10 @@
+@import "../colors.scss";
+
+.slide-container {
+  background-color: $white;
+  flex:1;
+  &--rect-button, &--circle-button{
+    cursor: crosshair;
+  }
+}
+

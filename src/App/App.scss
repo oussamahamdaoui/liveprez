@@ -1,0 +1,24 @@
+@import "../colors.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, .app {
+  height: 100vh;
+  background-color: $grey;
+  position: fixed;
+  color: $dark-grey;
+  font: 400 11px system-ui;
+}
+
+.app{
+  width: 100vw;
+  display: flex;
+}
+
+html {
+  overflow: hidden;
+}
